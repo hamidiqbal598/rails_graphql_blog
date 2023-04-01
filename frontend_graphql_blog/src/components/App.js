@@ -5,11 +5,9 @@ import User from './User'
 
 
 class App extends React.Component {
-  state = {
-    selectedUser: null
-  }
+  state = { selectedUser: null }
   selectUser = (user) => {
-    this.setState({selectedUser: user})
+    this.setState({ selectedUser: user })
   }
 
   render() {
