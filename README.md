@@ -58,3 +58,7 @@ Remove all the boiler code in App.js
 
 Update the index.js and add all the neede imports and configure the Graphql links
 
+
+Lastly start the server with
+    `yarn start`
+
