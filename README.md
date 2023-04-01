@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### This project is just a revising of GraphQl concepts and basic things of GraphQl in Ruby on Rails framework.
 
-Things you may want to cover:
 
-* Ruby version
+### Basic Quering
 
-* System dependencies
+{
+user(id:2) {
+name,
+email
+posts {
+title
+}
+}
+}
 
-* Configuration
 
-* Database creation
+### BasIc Mutation 
+Creating User
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+mutation {
+    createUser(input: {
+        name: "Hamid Iqbal",
+        email: "hamidiqbal598@gmail.com"
+    }) {
+        user {
+        id,
+        name,
+        email
+        }
+    }
+}
